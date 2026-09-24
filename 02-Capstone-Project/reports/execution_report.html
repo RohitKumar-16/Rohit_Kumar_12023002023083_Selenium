@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Execution Report - E-Commerce Automation</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; color: #222; }
+  h1 { margin-bottom: 4px; }
+  .summary { margin-bottom: 20px; font-size: 15px; }
+  .summary span { margin-right: 20px; font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ddd; padding: 8px; font-size: 13px; text-align: left; vertical-align: top; }
+  th { background: #f5f5f5; }
+</style>
+</head>
+<body>
+  <h1>E-Commerce Automation - Execution Report</h1>
+  <div class="summary">
+    <span>Total steps: 8</span>
+    <span style="color:#1a7f37;">Passed: 7</span>
+    <span style="color:#c62828;">Failed: 1</span>
+    <span>Run time: 2026-09-24 17:37:08</span>
+  </div>
+  <table>
+    <tr><th>Timestamp</th><th>Step</th><th>Status</th><th>Details</th><th>Screenshot</th></tr>
+    
+        <tr>
+          <td>2026-09-24 17:35:30</td>
+          <td>Launch browser</td>
+          <td style="color:#1a7f37; font-weight:600;">PASS</td>
+          <td>Opened https://automationexercise.com</td>
+          <td><img src="../screenshots/launch_browser_20260924_173530.png" width="160"></td>
+        </tr>
+        <tr>
+          <td>2026-09-24 17:35:35</td>
+          <td>Open login page</td>
+          <td style="color:#1a7f37; font-weight:600;">PASS</td>
+          <td></td>
+          <td><img src="../screenshots/open_login_page_20260924_173535.png" width="160"></td>
+        </tr>
+        <tr>
+          <td>2026-09-24 17:35:56</td>
+          <td>Login</td>
+          <td style="color:#1a7f37; font-weight:600;">PASS</td>
+          <td>Logged in as rohit.test.user@example.com</td>
+          <td><img src="../screenshots/login_20260924_173555.png" width="160"></td>
+        </tr>
+        <tr>
+          <td>2026-09-24 17:36:49</td>
+          <td>Search product</td>
+          <td style="color:#1a7f37; font-weight:600;">PASS</td>
+          <td>'Top' returned 14 result(s)</td>
+          <td><img src="../screenshots/search_product_20260924_173649.png" width="160"></td>
+        </tr>
+        <tr>
+          <td>2026-09-24 17:36:52</td>
+          <td>Open product details</td>
+          <td style="color:#1a7f37; font-weight:600;">PASS</td>
+          <td>Blue Top</td>
+          <td><img src="../screenshots/open_product_details_20260924_173652.png" width="160"></td>
+        </tr>
+        <tr>
+          <td>2026-09-24 17:36:56</td>
+          <td>Update quantity</td>
+          <td style="color:#1a7f37; font-weight:600;">PASS</td>
+          <td>Set quantity to 3</td>
+          <td><img src="../screenshots/update_quantity_20260924_173656.png" width="160"></td>
+        </tr>
+        <tr>
+          <td>2026-09-24 17:37:06</td>
+          <td>Add product to cart</td>
+          <td style="color:#1a7f37; font-weight:600;">PASS</td>
+          <td>Blue Top x3</td>
+          <td><img src="../screenshots/add_product_to_cart_20260924_173706.png" width="160"></td>
+        </tr>
+        <tr>
+          <td>2026-09-24 17:37:08</td>
+          <td>Verify cart details</td>
+          <td style="color:#c62828; font-weight:600;">FAIL</td>
+          <td>Expected qty 3, found 9</td>
+          <td><img src="../screenshots/verify_cart_details_20260924_173708.png" width="160"></td>
+        </tr>
+  </table>
+</body>
+</html>

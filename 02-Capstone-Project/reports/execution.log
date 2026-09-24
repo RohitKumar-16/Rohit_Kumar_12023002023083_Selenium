@@ -1,0 +1,19 @@
+2026-09-24 17:34:46,377 | INFO | Loaded test data from JSON: c:\Users\Administrator\Desktop\Capstone Project\test_data.json
+2026-09-24 17:34:46,377 | INFO | ====== WebDriver manager ======
+2026-09-24 17:35:00,561 | INFO | Get LATEST chromedriver version for google-chrome
+2026-09-24 17:35:01,774 | INFO | Get LATEST chromedriver version for google-chrome
+2026-09-24 17:35:02,399 | INFO | WebDriver version 154.0.8037.57 selected
+2026-09-24 17:35:02,407 | INFO | Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/154.0.8037.57/win64/chromedriver-win64.zip
+2026-09-24 17:35:02,407 | INFO | About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/154.0.8037.57/win64/chromedriver-win64.zip
+2026-09-24 17:35:03,038 | INFO | Driver downloading response is 200
+2026-09-24 17:35:08,421 | INFO | Driver has been saved in cache [C:\Users\Administrator\.wdm\drivers\chromedriver\win64\154.0.8037.57]
+2026-09-24 17:35:30,484 | INFO | [PASS] Launch browser - Opened https://automationexercise.com
+2026-09-24 17:35:35,581 | INFO | [PASS] Open login page - 
+2026-09-24 17:35:56,824 | INFO | [PASS] Login - Logged in as rohit.test.user@example.com
+2026-09-24 17:36:49,835 | INFO | [PASS] Search product - 'Top' returned 14 result(s)
+2026-09-24 17:36:52,992 | INFO | [PASS] Open product details - Blue Top
+2026-09-24 17:36:56,636 | INFO | [PASS] Update quantity - Set quantity to 3
+2026-09-24 17:37:06,118 | INFO | Dismissed 'Added to cart' modal.
+2026-09-24 17:37:06,312 | INFO | [PASS] Add product to cart - Blue Top x3
+2026-09-24 17:37:08,921 | ERROR | [FAIL] Verify cart details - Expected qty 3, found 9
+2026-09-24 17:37:08,928 | INFO | Execution report written to c:\Users\Administrator\Desktop\Capstone Project\reports\execution_report.html

@@ -1,0 +1,13 @@
+{
+  "base_url": "https://automationexercise.com",
+  "login": {
+    "email": "rohit.test.user@example.com",
+    "password": "TestPass@123",
+    "name": "Rohit Kumar"
+  },
+  "search": {
+    "product_search_term": "Top",
+    "product_name_to_add": "Blue Top",
+    "quantity": 3
+  }
+}
