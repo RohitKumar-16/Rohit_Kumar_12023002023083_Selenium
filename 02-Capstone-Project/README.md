@@ -51,18 +51,10 @@ Install the required packages:
 pip install -r requirements.txt
 ```
 
-Make sure Google Chrome and ChromeDriver are installed. ChromeDriver should be added to the system PATH, or `CHROMEDRIVER_PATH` can be set in `helpers.py`.
-
 ## Run
 
 ```bash id="k6q4ww"
 pytest
-```
-
-For headless execution:
-
-```bash id="v9g7zn"
-pytest --headless
 ```
 
 ## Output
