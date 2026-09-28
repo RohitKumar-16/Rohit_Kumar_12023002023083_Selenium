@@ -1,11 +1,11 @@
 # Capstone Assignment 1 — E-Commerce Automation
 
-**Technology:** Selenium WebDriver, Python
+**Technology:** Selenium WebDriver, Python, PyTest
 **Website:** https://automationexercise.com
 
 ## Project Overview
 
-Automated an e-commerce website using Selenium WebDriver with Python. The project automates the complete product purchase flow from login to cart verification.
+This project is about automating an e-commerce website using Selenium WebDriver with Python and PyTest. It covers the product flow from login to checking the cart. There are four test cases, and they run in order using one Chrome browser.
 
 ## Features
 
@@ -20,13 +20,23 @@ Automated an e-commerce website using Selenium WebDriver with Python. The projec
 * Handle alerts and popups
 * Generate HTML execution report
 
+## Test Cases
+
+1. `test_01_login` — Login to the website. If the account does not exist, it signs up first.
+2. `test_02_search_product` — Search for a product.
+3. `test_03_add_product_and_update_quantity` — Clear the cart, set the quantity, and add the product.
+4. `test_04_verify_cart_details` — Check the product name and quantity in the cart.
+
 ## Project Structure
 
-```text
-ecommerce_automation/
+```text id="c2q7wx"
+02-Capstone-Project/
 │
-├── ecommerce_automation.py
-├── test_data.json
+├── test_ecommerce.py     # Test cases
+├── conftest.py           # Fixtures and screenshots
+├── helpers.py            # Selenium functions
+├── pytest.ini            # PyTest settings
+├── test_data.json        # Test data
 ├── requirements.txt
 ├── README.md
 ├── screenshots/
@@ -37,20 +47,27 @@ ecommerce_automation/
 
 Install the required packages:
 
-```bash
+```bash id="5f3n9v"
 pip install -r requirements.txt
 ```
 
-Make sure Google Chrome is installed.
+Make sure Google Chrome and ChromeDriver are installed. ChromeDriver should be added to the system PATH, or `CHROMEDRIVER_PATH` can be set in `helpers.py`.
 
 ## Run
 
-```bash
-python ecommerce_automation.py
+```bash id="k6q4ww"
+pytest
 ```
+
+For headless execution:
+
+```bash id="v9g7zn"
+pytest --headless
+```
+
+## Output
 
 After execution:
 
 * Screenshots are saved in `screenshots/`
-* Execution logs are saved in `reports/`
-* HTML report is saved as `reports/execution_report.html`
+* HTML report is saved in `reports/report.html`
